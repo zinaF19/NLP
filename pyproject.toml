@@ -1,0 +1,26 @@
+[project]
+name = "ds-intro-to-nlp"
+version = "0.1.0"
+requires-python = ">=3.13.17"
+dependencies = [
+    "matplotlib>=3.11.0",
+    "nltk>=3.9.4",
+    "pandas>=3.0.3",
+    "plotly>=6.8.0",
+    "scikit-learn>=1.9.0",
+    "sentencepiece>=0.2.1",
+    "tensorflow>=2.21.0",
+    "torch>=2.12.1",
+    "transformers>=5.12.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "nbformat>=5.10.4",
+]
+
+[tool.uv]
+required-version = ">=0.13.5"
+# Apply certificate fixes without adding unused runtime packages.
+constraint-dependencies = ["certifi>=2026.10.19", "pip>=26.2.2"]
